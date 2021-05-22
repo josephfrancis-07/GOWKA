@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +15,26 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
 	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
+<style>
+	
 
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+</style>
 <body>
 	<header>
 		<nav>
@@ -31,6 +52,7 @@
 		</nav>
 		<div class="hero-text-box">
 			<h1>Omni Food</h1>
+			<h4>Excess food listing portal</h4>
 <!--
 			<a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a>
 			<a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
@@ -39,89 +61,108 @@
 	</header>
 
 
-	<section class="section-features js--section-features" id="features">
-		<div class="row>">
-			<h2>Announcements</h2>
-		</div>
+		<!--
 		<form action="#" method="post" class="contact-form">
 			<div class="row">
 				
-				<div class="col span-3-of-3">
-					<input type="text" name="name" id="name" placeholder="" required>
-				</div>
-			</div>
-			<div class="row">
 				
-				<div class="col span-3-of-3">
-					<input type="email" name="email" id="email" placeholder="" required>
+					
 				</div>
 			</div>
-			<div class="row">
-				
-				<div class="col span-3-of-3">
-					<input type="email" name="email" id="email" placeholder="" required>
-				</div>
-			</div>
-			<div class="row">
-				
-				<div class="col span-3-of-3">
-					<input type="email" name="email" id="email" placeholder="" required>
-				</div>
-			</div>
-			<div class="row">
-				
-				<div class="col span-3-of-3">
-					<input type="email" name="email" id="email" placeholder="" required>
-				</div>
-			</div>
-			<div class="row">
-				
-				<div class="col span-3-of-3">
-					<input type="email" name="email" id="email" placeholder="" required>
-				</div>
-			</div>
-			<div class="row">
-				
-				<div class="col span-3-of-3">
-					<input type="email" name="email" id="email" placeholder="" required>
-				</div>
-			</div>
+			
+			
+			
+			
 
-
-			<div class="row">
-				<div class="col span-1-of-3">
-					<label>&nbsp;</label>
-				</div>
-				<div class="col span-1-of-3">
-					<input type="submit" value="Book Now">
+			
+			<div class="row" style="margin:0;">
+			
+				<div  style ="padding:10px;  
+				border:1px solid orange;  
+				border-radius:8px;  
+				float:center;  
+				margin-top:5px;
+				margin:0;
+				width:100%;
+				height:250px;
+				rightleft:100px;
+				align:center; ">
+				
+					<marquee behavior="scroll" ;
+					direction="left";
+					 onmouseover="this.stop();"
+					  onmouseout="this.start();">
+						
+						<a href="https://www.zomato.com"><img src="./Images/1.jpg" style="height:230px;"></a>
+						<img src="./Images/2.jpg" style="height:230px;">
+						<img src="./Images/3.jpg" style="height:230px;">
+						<img src="./Images/4.jpg" style="height:230px;">
+						<img src="./Images/5.jpg" style="height:230px;">
+						<img src="./Images/6.jpg" style="height:230px;">
+						<img src="./Images/7.jpg" style="height:230px;">
+						<img src="./Images/8.jpg" style="height:230px;">
+						<img src="./Images/announce1.jpg" style="height:230px;">
+					</marquee>
 				</div>
 			</div>
-		</form>
-	</section>
+		-->
+		
+	<section class="section-features js--section-features" id="features">
+		<div class="row>">
+			<h2>Announcements</h2>
+			
+		</div>
+
+			
 
 	<section class="section-meals">
 		<ul class="meals-showcase clearfix">
 			<li>
 				<figure class="meals-photo">
+					<div class="container">
 					<img src="resources/img/1.jpg" alt="1.Korean bibimbap with egg and vegetables">
+					<div class="content">
+						<p>MANARCAD</p>
+    <p>Quantity : 100 People</p>
+  </div>
+</div>
+
 				</figure>
 
 			</li>
 			<li>
 				<figure class="meals-photo">
+					<div class="container">
 					<img src="resources/img/2.jpg" alt="2.Simple italian pizza with cherry tomatoes">
+					<div class="content">
+						<p>KOZHIKODE</p>
+    <p>Quantity : 30 People</p>
+  </div>
+</div>
 				</figure>
 
 			</li>
 			<li>
 				<figure class="meals-photo">
+					<div class="container">
 					<img src="resources/img/3.jpg" alt="3.	Chicken breast steak with vegetables ">
+					<div class="content">
+						<p>THALASSERY</p>
+    <p>Quantity : 50 People</p>
+  </div>
+</div>
 				</figure>
 
 			</li>
 			<li>
 				<figure class="meals-photo">
+					<div class="container">
 					<img src="resources/img/4.jpg" alt="4.Autumn pumpkin soup">
+					<div class="content">
+						<p>MANNAR</p>
+    <p>Quantity : 70 People</p>
+  </div>
+</div>
 				</figure>
 			</li>
 		</ul>
@@ -129,47 +170,97 @@
 		<ul class="meals-showcase clearfix">
 			<li>
 				<figure class="meals-photo">
+					<div class="container">
 					<img src="resources/img/5.jpg" alt="5.Paleo beef steak with vegetables">
+					<div class="content">
+						<p>TRIVANDRUM</p>
+    <p>Quantity : 50 People</p>
+  </div>
+</div>
 				</figure>
 			</li>
 			<li>
 				<figure class="meals-photo">
+					<div class="container">
 					<img src="resources/img/6.jpg" alt="6.Healthy baguette with egg and vegetables">
+					<div class="content">
+						<p>PALLIPURAM</p>
+    <p>Quantity : 100 People</p>
+  </div>
+</div>
 				</figure>
 			</li>
 			<li>
 				<figure class="meals-photo">
+					<div class="container">
 					<img src="resources/img/7.jpg" alt="7.Burger with cheddar and bacon">
+					<div class="content">
+						<p>THRISSUR</p>
+    <p>Quantity : 50 People</p>
+  </div>
+</div>
 				</figure>
 			</li>
 			<li>
 				<figure class="meals-photo">
+					<div class="container">
 					<img src="resources/img/8.jpg" alt="8.	Granola with cherries and strawberries">
+					<div class="content">
+						<p>PAMPADY</p>
+    <p>Quantity : 150 People</p>
+  </div>
+</div>
 				</figure>
 			</li>
 		</ul>
 	</section>
 
+
+	<div class="row" style="margin-left:300px;">
+		<div class="col span-1-of-3">
+			<label>&nbsp;</label>
+		</div>
+		<div class="col span-1-of-3">
+			<input type="submit" value="View All" float="right" onClick="view()">
+			<script>
+				function view() {
+					window.location.href="./Sign_in/Book Now.html"
+				}
+			</script>
+		</div>
+		
+	</div>
+</section>
+
 	<section class="section-steps" id="works">
 		<div class="row">
 			<h2>Feed The Needy</h2>
 		</div>
-		<form action="#" method="post" class="contact-form">
+		<!--<form  method="post" class="contact-form"> -->
 			
 
 
-			<div class="row">
+			<div class="row" style="margin-left:300px;">
 				<div class="col span-1-of-3">
 					<label>&nbsp;</label>
 				</div>
 				<div class="col span-1-of-3">
-					<a href="https:\\www.google.com">
-					     <input type="submit" value="Log  In">
-						 <input type="submit" value="Sign Up">
-				    </a>
+					
+						 <input  type="submit" Value="Sign In" onClick="signIn()">
+						 <br><br>
+						 <input type="submit" value="Sign Up" onClick="signUp()">
+						 </br></br>
+						 <script>
+						  function signIn() {
+							window.location.href="./Sign_in/login.html";
+						  }
+						  function signUp() {
+							window.location.href="./Sign_in/sign up.html";
+						  }
+						 </script>    
 				</div>
 			</div>
-		</form>
+		<!-- </form> -->
 
 	</section>
 
@@ -242,7 +333,7 @@
 
 <section class="customer-quotes">
 		<div class="row">
-			<h2>Good Food is Good Mood</h2>
+			<h2>Good Food</a> is Good Mood</h2>
 		</div>
 		<div class="row">
 			<div class="col span-1-of-3">
@@ -265,7 +356,16 @@
 	</section>
 	<section class="section-plans js--section-plans" id="marketing">
 		<div class="row">
-			<h2>About US</h2>
+			<h2>About Us</h2>
+
+			<p>Omni Foods is an organization that works to feed the needy of India who is deprived of good food. 
+				Despite adequate food production, the UN has reported that about 190 million Indians remain undernourished.
+				 India wastes up to 67 million tonnes of food every year, according to a government study. 
+				 As per Hindustan Times, the value of the food lost is Rs 92,000 crore.
+				  Omni Food serves as a bridge to connect the hotel managements, party organisers and every
+				   common Indian citizen who desire to donate their extra food to the superintendents of orphanages, 
+				   hospitals, old-age homes, and other social service organisations. 
+			</p>
 		</div>
 
 		
