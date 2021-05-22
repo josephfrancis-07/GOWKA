@@ -29,7 +29,7 @@ body{
 	bottom: -40px;
 	width: auto;
 	height: auto;
-	background-image: url(https://lh3.googleusercontent.com/proxy/n8USMaxJExhOx6D7zVq7HqN8GUIW6C7lgAireEGkYO57bzpfvqgOMz4kkKt5_1niX0nwiUtXxWuvefkFqG90m6DSsbfzfKHasgEUIkjJ2QwadjPqhhQONhBz2ZanjGPLDpHMAgRkwfSiby1THI9SalElrygVdg);
+	background-image: url(https://cms.qz.com/wp-content/uploads/2019/04/Mid-day-meal.jpg?quality=75&strip=all&w=1600&h=900&crop=1);
 	background-size: cover;
 	-webkit-filter: blur(5px);
 	z-index: 0;
@@ -50,8 +50,8 @@ body{
 
 .header{
 	position: absolute;
-	top: calc(50% - 350px);
-	left: calc(50% - 655px);
+	top: calc(50% - 220px);
+	left: calc(50% - 555px);
 	z-index: 2;
 }
 
@@ -78,8 +78,8 @@ body{
 	z-index: 2;
 }
 
-.login input[type=text]{
-	width: 450px;
+.login input[type=email]{
+	width: 250px;
 	height: 30px;
 	background: transparent;
 	border: 1px solid rgba(255,255,255,0.6);
@@ -89,12 +89,10 @@ body{
 	font-size: 16px;
 	font-weight: 400;
 	padding: 4px;
-	margin-top: 10px;
-	margin-left:-600px;
 }
 
 .login input[type=password]{
-	width: 450px;
+	width: 250px;
 	height: 30px;
 	background: transparent;
 	border: 1px solid rgba(255,255,255,0.6);
@@ -105,35 +103,10 @@ body{
 	font-weight: 400;
 	padding: 4px;
 	margin-top: 10px;
-	margin-left: -600px;
 }
 
-.login input[type=button]{
-	width: 260px;
-	height: 35px;
-	background: #fff;
-	border: 1px solid #fff;
-	cursor: pointer;
-	border-radius: 2px;
-	color: #a18d6c;
-	font-family: 'Exo', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 6px;
-	margin-top: 10px;
-	margin-left:-600px;
-	
-}
 
-.login input[type=button]:hover{
-	opacity: 0.8;
-}
-
-.login input[type=button]:active{
-	opacity: 0.6;
-}
-
-.login input[type=text]:focus{
+.login input[type=email]:focus{
 	outline: none;
 	border: 1px solid rgba(255,255,255,0.9);
 }
@@ -142,10 +115,7 @@ body{
 	outline: none;
 	border: 1px solid rgba(255,255,255,0.9);
 }
-
-.login input[type=button]:focus{
-	outline: none;
-}
+	
 
 ::-webkit-input-placeholder{
    color: rgba(255,255,255,0.6);
@@ -159,7 +129,11 @@ body{
     <script src="js/prefixfree.min.js"></script>
 
 </head>
+   
 
+
+
+     
 <body>
 
   <div class="body"></div>
@@ -168,21 +142,66 @@ body{
 			<div>Omni<span>Food</span></div>
 		</div>
 		<br>
-		<div class="login">
-				<input type="text" placeholder="username" name="user"><br>
-				<input type="password" placeholder="password" name="password"><br>
-				<input type="text" placeholder="location" name="place"><br>
-				<input type="text" placeholder="Designation" name="Designation"><br>
-				<input type="text" placeholder="Do you like to donate food(Yes/No)" name="Do you like to donate food(Yes/No)"><br>
-				<input type="text" placeholder="Does your organization need food(Yes/No)" name="Does your organization need food(Yes/No)"><br>
-				<input type="text" placeholder="Phone Number" name="Mobile number"><br>
-				<input type="button" value="Create Account"><br>
-				</br></br></br></br></br></br></br></br>
+		<div id="login_div" class="login">
+				<input type="email" placeholder="username(Email)" id="email_field" name="user"  />
+				<input type="password" placeholder="password"  id="pass_field" name="password" />
+				<div>
+			
+					<button onclick="login()" type="button">Login</button> 
+				    <button onclick="signup()" type="button">Sign-Up</button> 
+		
+		
+		
+				</div>
+				
 				
 				
 		</div>
+		<div id="user_div" class ="loggedin-div">
+			<button onclick="window.location.href='https:google.com';">
+				Welcome To Home
+			  </button>
+		</div>
+		
+   
 
-  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+
+
+</div>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCxXxbFbrILN8DcCvSq4yFrlnnsiDgPn6M",
+    authDomain: "gowka-91e8d.firebaseapp.com",
+    projectId: "gowka-91e8d",
+    storageBucket: "gowka-91e8d.appspot.com",
+    messagingSenderId: "868223828237",
+    appId: "1:868223828237:web:58cb95ec9c1b4c7b69b044"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script>
+	function signup() {
+		window.location.href="./sign up.html"
+	}
+</script>
+
+
+<script src="index.js"></script>
+
+
+
+
 
 </body>
 
